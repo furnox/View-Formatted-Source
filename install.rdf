@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:extension:file:vpps.jar"
+                   em:package="content/vpps/"
+                   em:skin="skin/classic/vpps/">
+    <em:locale>locale/en-US/vpps/</em:locale>
+    <em:locale>locale/en/vpps/</em:locale>
+    <em:locale>locale/de-DE/vpps/</em:locale>    
+    <em:locale>locale/da-DK/vpps/</em:locale>    
+    <em:locale>locale/nl-NL/vpps/</em:locale>    
+    <em:locale>locale/fr-FR/vpps/</em:locale>    
+    <em:locale>locale/fy-NL/vpps/</em:locale>    
+    <em:locale>locale/es-ES/vpps/</em:locale>    
+    <em:locale>locale/es-AR/vpps/</em:locale>    
+    <em:locale>locale/it-IT/vpps/</em:locale>    
+    <em:locale>locale/pt-BR/vpps/</em:locale>    
+    
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$eT4a11"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="1.0"
+                   em:maxVersion="2.0.0.*" />
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{5ed572bf-9878-43b3-be69-feb67cb4080e}"
+                   em:name="View formatted source"
+                   em:version="0.9.5.0"
+                   em:creator="Felix Ritter"
+                   em:description="View formatted and rendered source code"
+                   em:iconURL="chrome://vpps/skin/logo.png"
+                   em:optionsURL="chrome://vpps/content/options.xul"
+                   em:aboutURL="chrome://vpps/content/about.xul">
+    <em:targetApplication RDF:resource="rdf:#$eT4a11"/>
+    <em:file RDF:resource="urn:mozilla:extension:file:vpps.jar"/>
+  </RDF:Description>
+</RDF:RDF>
